@@ -10,6 +10,8 @@ import Buycredits from './pages/Buycredits'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Login from './components/Login'
+import Contact from './pages/Contact';
+import PolicyPage from './pages/PolicyPage.jsx';
 import { Appcontext } from './context/Appcontext'
 
 const App = () => {
@@ -28,12 +30,17 @@ const App = () => {
         <Route path='/' element ={<Home/>}/>
         <Route path='/result' element ={<Result/>}/>
         <Route path='/buy' element ={<Buycredits/>}/>
-
+        <Route path='/contact' element ={<Contact/>} />
+        <Route path="/policy" element={<PolicyPage />} />
 
       </Routes>
-      <Footer/>
+
+      <div className='w-full'>
+        <Footer  />
+      </div>
 
     </div>
+    
   )
 
 }
