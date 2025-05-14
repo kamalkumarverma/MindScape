@@ -22,12 +22,15 @@ const Generatebtn = () => {
     className='pb-16 text-center'>
         <h1 className='text-2xl md:text-3xl lg:text-4xl mt-4 font-semibold py-6 md:py-16 text-neutral-800'>See the magic. Try now</h1>
         <button 
-        onClick={onclickhandler}
+                    onClick={() => {
+                      navigate('/result');
+                      window.scrollTo(0, 0); // Scrolls to top after navigation
+            }}
         className='inline-flex items-center 
         gap-2 px-12 py-3 rounded-full bg-black
         text-white m-auto hover:scale-105
-        transition-all duration-500'>Generate images
-            <img className="h-6" src={assets.star_group} alt="" />
+        transition-all duration-500'>Generate images ✨
+            {/* <img className="h-6" src={assets.star_group} alt="" /> */}
         </button>
     </motion.div>
   )

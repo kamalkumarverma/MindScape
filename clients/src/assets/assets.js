@@ -20,7 +20,6 @@ import credit_star from './credit_star.svg'
 import profile_icon from './profile_icon.png'
 import desk from "./desk.jpg"
 import logo_11 from "./logo_11.png"
-
 export const assets = {
     logo_11,
     logo,
