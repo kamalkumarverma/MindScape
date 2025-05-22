@@ -13,6 +13,14 @@
 ![image](https://github.com/user-attachments/assets/a7e3fec0-7d02-4952-94e0-05c0236ad5bd)
 ![image](https://github.com/user-attachments/assets/6d089a80-0bcb-4a37-890a-876c967f2185)
 
+Payment gateway
+![image](https://github.com/user-attachments/assets/4e5d978a-9ce1-4130-8597-422043f68781)
+![image](https://github.com/user-attachments/assets/8f5c8210-af68-4d29-848d-a8cdcd716a1d)
+
+Check eligibility for pay later
+![image](https://github.com/user-attachments/assets/8e28381e-f235-462b-b204-0b315c13aa78)
+
+
 
 ## 🚀 Tech Stack
 
