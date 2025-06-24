@@ -45,7 +45,6 @@ Check out the live version of the MindScape here:
 ![Screenshot 2025-06-24 141345](https://github.com/user-attachments/assets/ea226423-e02c-4fd8-a6fa-60d6232971a6)
 ![Screenshot 2025-06-24 141441](https://github.com/user-attachments/assets/054227a2-eaa8-4318-a1b0-9abb92158f1e)
 
-![Screenshot 2025-06-24 153346](https://github.com/user-attachments/assets/9563b812-7ec2-4690-91a4-709dd6c046f7)
 
 
 
