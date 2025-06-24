@@ -14,7 +14,12 @@ const app = express();
 const corsOptions = {
   origin: 'https://mindscape-1.onrender.com',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+  allowedHeaders: [
+    'Content-Type',
+    'Authorization',
+    'token', // ✅ Add this line to allow 'token' header
+    'X-Requested-With'
+  ],
   credentials: true,
   optionsSuccessStatus: 200
 };
