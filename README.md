@@ -5,8 +5,8 @@
 ---
 ## 🚀 Live Demo
 
-Check out the live version of the FocusTrack Task Manager here:  
-🔗 [FocusTrack Live Demo](https://mindscape-1.onrender.com/)
+Check out the live version of the MindScape here:  
+🔗 [MindScape Live Demo](https://mindscape-1.onrender.com/)
 
 ## 🚀 Tech Stack
 
