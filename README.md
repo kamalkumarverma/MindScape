@@ -24,6 +24,10 @@ Check out the live version of the MindScape here:
 
 ---
 
+![Screenshot 2025-06-24 141203](https://github.com/user-attachments/assets/c2b3a272-f8f7-4c11-8888-9cdb9ba258c8)
+
+
+
 ## 📁 Folder Structure
 
 ### `clients/`
