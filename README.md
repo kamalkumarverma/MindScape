@@ -24,7 +24,28 @@ Check out the live version of the MindScape here:
 
 ---
 
-![Screenshot 2025-06-24 141203](https://github.com/user-attachments/assets/c2b3a272-f8f7-4c11-8888-9cdb9ba258c8)
+![Screenshot 2025-06-24 135238](https://github.com/user-attachments/assets/4cf4b07d-f4d4-425d-a82d-9a22f6c68dc7)
+![Screenshot 2025-06-24 135317](https://github.com/user-attachments/assets/29d57e40-c859-4454-b793-e117b95de1b4)
+
+![Screenshot 2025-06-24 135340](https://github.com/user-attachments/assets/dafa6a8e-5934-4357-9397-d29bbc92d927)
+
+![Screenshot 2025-06-24 135356](https://github.com/user-attachments/assets/9f69e9a4-a53e-43a5-9068-748daad90259)
+
+![Screenshot 2025-06-24 135419](https://github.com/user-attachments/assets/94087545-1733-427f-9dd4-419bcb1d0858)
+![Screenshot 2025-06-24 135439](https://github.com/user-attachments/assets/8792fee7-40c1-4a06-b440-336a6bdca550)
+![Screenshot 2025-06-24 135456](https://github.com/user-attachments/assets/7e646899-2d3a-4e55-9cd8-0be9ebc14c22)
+![Screenshot 2025-06-24 135513](https://github.com/user-attachments/assets/7dfc56a5-5f48-4e91-9f63-84b0a2b11d4c)
+![Screenshot 2025-06-24 141107](https://github.com/user-attachments/assets/81a903c1-eaf9-4e9b-bc3f-8a5fa772578b)
+![Screenshot 2025-06-24 141124](https://github.com/user-attachments/assets/a33d31eb-c966-4b81-8c91-8c6511e2ce0b)
+
+![Screenshot 2025-06-24 141203](https://github.com/user-attachments/assets/d1afd042-5a9d-40ce-a3bc-877668294526)
+![Screenshot 2025-06-24 141225](https://github.com/user-attachments/assets/4362e683-d768-4adb-8908-f9c3fa3442c7)
+
+![Screenshot 2025-06-24 141312](https://github.com/user-attachments/assets/812c3b7a-6a84-4aeb-90f0-cb82bda3c514)
+![Screenshot 2025-06-24 141345](https://github.com/user-attachments/assets/ea226423-e02c-4fd8-a6fa-60d6232971a6)
+![Screenshot 2025-06-24 141441](https://github.com/user-attachments/assets/054227a2-eaa8-4318-a1b0-9abb92158f1e)
+
+![Screenshot 2025-06-24 153346](https://github.com/user-attachments/assets/9563b812-7ec2-4690-91a4-709dd6c046f7)
 
 
 
