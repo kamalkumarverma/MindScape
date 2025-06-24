@@ -1,49 +1,72 @@
 import axios from "axios";
 import userModel from "../models/usermodel.js";
-import FormData from "form-data"
+import FormData from "form-data";
 
-const generateImage =async (req,res)=>{
+const generateImage = async (req, res) => {
     try {
+        const { userId, prompt } = req.body;
 
-
-
-        const {userId,prompt} = req.body;
-
-        const user = await userModel.findOne({ _id: userId });
-
-        if(!user || !prompt){
-
-            return res.send({success:false,message:"missing details"})             
+        // Validate user and prompt
+        if (!userId || !prompt || prompt.trim().length === 0) {
+            return res.send({ success: false, message: "Missing or invalid details" });
         }
 
-        if(user.creditBalance===0 || user.creditBalance < 0){
-            return res.send({success:false,message:"no credit balance",creditBalance:user.creditBalance})
+        const user = await userModel.findById(userId);
+        if (!user) {
+            return res.send({ success: false, message: "User not found" });
         }
 
+        if (user.creditBalance <= 0) {
+            return res.send({
+                success: false,
+                message: "No credit balance",
+                creditBalance: user.creditBalance
+            });
+        }
+
+        // Prepare the form data
         const formData = new FormData();
-        formData.append("prompt",prompt);
+        formData.append("prompt", prompt);
 
-        const {data} = await axios.post("https://clipdrop-api.co/text-to-image/v1",formData,{
-            headers: {
-                'x-api-key': process.env.CLIP_DROP_API,
-              },
-              responseType:"arraybuffer"
-        })
+        // Make the API call to ClipDrop
+        const { data } = await axios.post(
+            "https://clipdrop-api.co/text-to-image/v1",
+            formData,
+            {
+                headers: {
+                    ...formData.getHeaders(), // Include proper multipart headers
+                    'x-api-key': process.env.CLIP_DROP_API,
+                },
+                responseType: "arraybuffer" // To receive binary data
+            }
+        );
 
-        const base64Image = Buffer.from(data,"binary").toString("base64");
+        // Handle empty or invalid response
+        if (!data || data.length === 0) {
+            return res.send({ success: false, message: "Image generation failed, empty response" });
+        }
 
-        const resultImage = `data:image/png;base64,${base64Image}`
+        // Convert binary to base64 string
+        const base64Image = Buffer.from(data, "binary").toString("base64");
+        const resultImage = `data:image/png;base64,${base64Image}`;
 
-        await userModel.findByIdAndUpdate(user._id,{creditBalance:user.creditBalance-1})
+        // Update credit balance
+        await userModel.findByIdAndUpdate(user._id, {
+            creditBalance: user.creditBalance - 1
+        });
 
-        res.send({success:true,message:"image generated",creditBalance:user.creditBalance-1,resultImage})
-
+        // Send success response with image
+        res.send({
+            success: true,
+            message: "Image generated",
+            creditBalance: user.creditBalance - 1,
+            resultImage
+        });
 
     } catch (error) {
-        console.log(error)
-
-        return res.send({success:false,message:error.message})    
+        console.error("Error in generateImage:", error);
+        return res.send({ success: false, message: error.message });
     }
-}
+};
 
-export default generateImage
+export default generateImage;

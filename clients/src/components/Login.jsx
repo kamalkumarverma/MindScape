@@ -23,7 +23,7 @@ const Login = () => {
         try {
             if(state === "Login"){
                 console.log("Backend URL:", backend_url);
-               const {data} =  await axios.post("http://localhost:4000" + "/api/user/login",{email,password})
+               const {data} =  await axios.post(backend_url + "/api/user/login",{email,password})
 
                if(data.success){
                 setToken(data.token)
@@ -34,7 +34,7 @@ const Login = () => {
                 toast.error(data.message)
                }
             }else{
-                const {data} =  await axios.post("http://localhost:4000" + "/api/user/register",{name,email,password})
+                const {data} =  await axios.post(backend_url+ "/api/user/register",{name,email,password})
                 // console.log("Backend URL:", backend_url);
                 if(data.success){
                  setToken(data.token)
