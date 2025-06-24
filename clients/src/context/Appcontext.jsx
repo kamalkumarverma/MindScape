@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 export const Appcontext = createContext()
 
-const VITE_Backend_URL = 'http://localhost:4000'
+const VITE_Backend_URL = "https://mindscape-j8gf.onrender.com"
 
 
 const AppContextProvider =(props)=>{
